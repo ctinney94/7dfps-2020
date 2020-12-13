@@ -1,0 +1,13 @@
+		7DPFS TO DO LIST
+
+	JUICE
++ Bullet shells
++ Chunks of enemies flying off when blown apart
++ Concrete cracking visual + sound when landing from great height
+	
+	MISC
++ Links to bandcamp pages
++ License or references to assets used
+
+
++ Mouse sensitvity options
