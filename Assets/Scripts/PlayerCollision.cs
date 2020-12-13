@@ -31,7 +31,10 @@ public class PlayerCollision : MonoBehaviour
 		if(GameStateManager.instance.GetState() != GameStateManager.GameStates.STATE_GAMEPLAY)
 			return;
 
-		hp = Mathf.Clamp(hp + (Time.deltaTime * regen), 0, 100);
+        if (transform.position.y < -250.0f)
+            IncreaseHP(-100.0f);
+
+        hp = Mathf.Clamp(hp + (Time.deltaTime * regen), 0, 100);
 		healthSlider1.value = 100 - hp;
 		healthSlider2.value = 100 - hp;
 		if(hp == 0)

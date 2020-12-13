@@ -44,7 +44,6 @@ public class GameOverState : GameState
 		{
 			Application.LoadLevel(2);
 			GameStateManager.instance.ChangeState(GameStateManager.GameStates.STATE_GAMEPLAY);
-			//SceneManager.LoadScene(1);
 		}
 	}
 }
