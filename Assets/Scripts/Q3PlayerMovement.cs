@@ -62,9 +62,7 @@ public class Q3PlayerMovement : MonoBehaviour
 	public float sideStrafeSpeed = 1.0f;          // What the max speed to generate when side strafing
 	public float jumpSpeed = 8.0f;                // The speed at which the character's up axis gains when hitting jump
 	public bool holdJumpToBhop = false;           // When enabled allows player to just hold jump button to keep on bhopping perfectly. Beware: smells like casual.
-
-	/*print() style */
-	public GUIStyle style;
+  
 
 	/*FPS Stuff */
 	public float fpsDisplayRate = 4.0f; // 4 updates per sec
@@ -114,6 +112,10 @@ public class Q3PlayerMovement : MonoBehaviour
 	{
 		int x = PlayerPrefs.GetInt("MouseSensitivityX");
 		int y = PlayerPrefs.GetInt("MouseSensitivityY");
+        if (x == 0)
+            x = 100;
+        if (y == 0)
+            y = 100;
 		xMouseSensitivity = x;
 		yMouseSensitivity = y;
 	}
